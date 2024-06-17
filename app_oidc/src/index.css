@@ -1,0 +1,73 @@
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+    margin: 16px;
+    height: 100%;
+    display: flex;
+}
+
+.login {
+    padding: 16px;
+    border-radius: 8px;
+    width: 33%;
+    align-self: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 64px;
+}
+
+button {
+    border-radius: 32px;
+    padding: 8px 32px;
+    background: white;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.page {
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    font-weight: bold;
+    background: #efefef;
+    border: 1px solid #dddddd;
+    padding: 16px;
+}
+
+.table td {
+    border: 1px solid #dddddd;
+    padding: 16px;
+}
