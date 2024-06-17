@@ -33,12 +33,12 @@ passport.deserializeUser((user, done) => {
     done(null, user);
 });
 
-const cert = fs.readFileSync("./cert", "utf-8");
+const cert = fs.readFileSync(process.env.CERTIFICATE, "utf-8");
 
 passport.use(new SamlStrategy(
     {
-        entryPoint: 'http://localhost:8080/realms/master/protocol/saml',
-        callbackUrl: 'http://localhost:5555/login/callback',
+        entryPoint: process.env.SAML_ENTRY,
+        callbackUrl: process.env.CALLBACK_URL,
         issuer: "app-saml",
         cert,
     },
